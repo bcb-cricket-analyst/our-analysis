@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mahmudul Hasan Joy · Scouting Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏏%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<header class="hero"><div class="wrap"><div class="hw"><div>
+<div class="kick">Opposition scouting · Chattogram</div><h1>Mahmudul Hasan Joy</h1>
+<p class="lead">Right-handed top-order batter। ধৈর্যশীল, চাপের মুখে লম্বা ইনিংস খেলতে পারে। NCL T20 (2nd Edition)-এ তার সংখ্যা:</p>
+<div class="hs"><div><b data-n="155.29" data-d="2">0</b><span>Strike rate</span></div><div><b data-n="46.14" data-d="2">0</b><span>Average</span></div><div><b data-n="323">0</b><span>Runs</span></div></div></div>
+<div class="stage"><div class="ball"></div><div class="shadow"></div></div></div></div></header>
+<nav><div class="tabs" id="tabs" role="tablist"></div></nav>
+<main>
+<section id="ov"><h2>প্রোফাইল ও শক্তি</h2><div class="sub">সে কীভাবে ব্যাট করে, এক নজরে</div><div class="g" id="g1"></div></section>
+<section id="st"><h2>পরিসংখ্যান</h2><div class="sub">NCL T20 (2nd Ed, Chattogram) বনাম সব T20 মিলিয়ে</div>
+<div class="big" id="bg"></div><div class="lg"><span><i class="l1"></i>NCL T20 (2nd Ed)</span><span><i class="l2"></i>সব T20</span></div><div class="card" id="cmp"></div></section>
+<section id="sc"><h2>স্কোরিং জোন</h2><div class="sub">কোথায় আর কীভাবে সে রান করে</div><div class="g" id="g2"></div></section>
+<section id="pa"><h2>প্ল্যান: Fast / FM / MF</h2><div class="sub">নতুন বলে ফাস্ট সিমারদের বিরুদ্ধে সে বেশি ঝুঁকিতে থাকে</div>
+<div class="alert"><b>মূল দুর্বলতা:</b> ইনিংসের শুরুতে, ফ্রেশ নতুন বলে, অফ স্টাম্পের আশেপাশে সিম মুভমেন্ট ও অ্যাঙ্গেল্ড ডেলিভারিতে।</div>
+<h3 style="margin:6px 0">বোলাররা কোথায় বল করেছে (Fast/FM/MF)</h3><div class="pz"><div class="pitch" id="pitch"></div></div>
+<h3 style="margin:18px 0 10px">পরিকল্পনা</h3><ol class="steps" id="s1"></ol></section>
+<section id="ra"><h2>প্ল্যান: RAO</h2><div class="sub">Right-arm off-spin-এর বিরুদ্ধে মূল বোলিং পরিকল্পনা</div><ol class="steps" id="s2"></ol></section>
+<section id="sl"><h2>প্ল্যান: SLAO</h2><div class="sub">Slow left-arm orthodox-এর বিরুদ্ধে</div><ol class="steps" id="s3"></ol></section>
+<section id="vd"><h2>ভিডিও ক্লিপ</h2><div class="sub">ম্যাচ থেকে নেওয়া উল্লেখযোগ্য বল</div><div class="vg" id="vg"></div>
+<p class="note">ভিডিওগুলো index.html-এর পাশের videos ফোল্ডারে থাকতে হবে। ফোল্ডারটা একসাথে রাখলেই চলবে।</p></section>
+<section id="fs"><h2>ফিল্ড সেটিং</h2><div class="sub">ফিল্ডার, ব্যাটার ও বোলারের অবস্থান ড্র্যাগ করে যেকোনো সময় পরিবর্তন করুন</div>
+<div class="field-toolbar"><div class="field-legend"><span><i class="legend-dot fielder-dot"></i>Fielder (11)</span><span><i class="legend-dot batter-dot"></i>Batter</span><span><i class="legend-dot bowler-dot"></i>Bowler</span></div><div class="field-actions"><button type="button" class="field-btn" id="resetField">Reset positions</button><button type="button" class="field-btn secondary" id="saveField">Save layout</button><button type="button" class="field-btn secondary" id="loadField">Load saved</button></div></div>
+<div class="field-card"><div class="field-scroll"><svg id="cricketField" class="cricket-field" viewBox="0 0 800 620" role="img" aria-label="Interactive cricket field. Drag fielders, batter and bowler to reposition them.">
+<defs><radialGradient id="grass"><stop offset="0" stop-color="#3eaa68"/><stop offset="1" stop-color="#167443"/></radialGradient><pattern id="mow" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M0 0H80V80H0Z" fill="#ffffff" opacity=".035"/><path d="M0 0H40V80H0Z" fill="#000000" opacity=".035"/></pattern></defs>
+<ellipse cx="400" cy="310" rx="365" ry="290" fill="url(#grass)" stroke="#d7f2df" stroke-width="3"/><ellipse cx="400" cy="310" rx="365" ry="290" fill="url(#mow)"/><ellipse cx="400" cy="310" rx="205" ry="160" fill="none" stroke="#d5f1d9" stroke-width="2.5" stroke-dasharray="7 6"/><ellipse cx="400" cy="310" rx="130" ry="102" fill="none" stroke="#d5f1d9" stroke-width="1.5" opacity=".5"/>
+<rect x="379" y="224" width="42" height="172" rx="2" fill="#d8bd83" stroke="#f8e8bd" stroke-width="2"/><rect x="388" y="224" width="24" height="172" fill="#c9a96b" opacity=".5"/><path d="M365 237H435 M365 383H435" stroke="#fff5d8" stroke-width="3"/><path d="M377 228v18 M423 228v18 M377 374v18 M423 374v18" stroke="#fff5d8" stroke-width="3"/>
+<text x="400" y="42" class="field-direction">OFF SIDE / LEG SIDE</text><text x="400" y="598" class="field-caption">DRAG THE MARKERS TO SET YOUR FIELD</text>
+<g id="fieldPlayers"></g></svg></div><p class="field-help">Tip: Click and drag any numbered fielder, batter, non-striker or bowler. On a phone or tablet, drag with your finger. Use “Save layout” to keep your current field setting in this browser.</p></div>
+<div class="field-roster card"><h3>Players on field</h3><div id="fieldRoster" class="roster-grid"></div></div></section>
+</main>
+<script>
+const T=[['ov','প্রোফাইল'],['st','পরিসংখ্যান'],['sc','স্কোরিং জোন'],['pa','বনাম Fast'],['ra','বনাম RAO'],['sl','বনাম SLAO'],['vd','ভিডিও'],['fs','ফিল্ড সেটিং']];
+const $=s=>document.querySelector(s),RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const NCL={m:8,i:8,r:323,hs:110,a:46.14,no:1,sr:155.29,b:208,f:21,s:21,h50:2,h100:1},ALL={m:68,i:61,r:1611,hs:110,a:30.39,no:8,sr:120.22,b:1340,f:134,s:62,h50:7,h100:1};
+const bd=x=>(x.f*4+x.s*6)/x.r*100,bpb=x=>x.b/(x.f+x.s);
+const cards=(id,a)=>$(id).innerHTML=a.map((x,i)=>`<div class="card tilt"><div class="n">${i+1}</div><h3>${x[0]}</h3><p>${x[1]}</p></div>`).join('');
+cards('#g1',[['Right-handed top-order batter','টপ অর্ডারে খেলে, ক্রিজে সময় কাটাতে প্রস্তুত।'],['ধৈর্যশীল','বেশি সময় ক্রিজে থাকতে চায়, চাপের মুখে লম্বা ইনিংস খেলতে পারে।'],['Methodical scoring','ভালো ডিফেন্স। শুরু থেকেই বিস্ফোরক নয়, ইনিংস ধীরে ধীরে গড়ে তোলে।']]);
+cards('#g2',[['Front foot & back foot','পিচ-আপ বলে ড্রাইভ ও স্ট্রেট ড্রাইভ, শর্ট বলে কাট ও পুল। সময় পেলে স্বচ্ছন্দ।'],['রান জমানোর ধরন','সিঙ্গেলস এবং লং-অফ, লং-অন, মিড-অফ, মিড-অন ও কভার দিয়ে রান করে। সব দিকে বড় হিটিং নয়।'],['স্পিনের বিরুদ্ধে','সেট হওয়ার পর গ্যাপ বের করে, ফুটওয়ার্ক ও স্লগ ব্যবহার করে।'],['এ বছর','Slog, slog sweep, pick-up (cow corner) ও inside out বেশি খেলছে।'],['দুর্বল দিক','আত্মবিশ্বাস না থাকলে শুরুতে স্টেপ আউট করতে কম স্বচ্ছন্দ।']]);
+const L=(id,a)=>$(id).innerHTML=a.map(x=>`<li class="tilt">${x}</li>`).join('');
+L('#s1',['দ্রুত বা ফাস্ট-মিডিয়াম সিমার, বিশেষ করে নতুন বলে ভালো সুইং/সিম কন্ট্রোলসহ।','বাঁহাতি সিমার থাকলে প্যাডে ঢোকানো বা অফ স্টাম্পের ওপর দিয়ে অ্যাঙ্গেল করা বল।','সে স্ট্রেট বা অফ সাইডে খেলে, তাই শরীর থেকে দূরে বল দিলে ডিফ্লেক্ট বা এজ হতে পারে।','অফের ঠিক বাইরের বলে ড্রাইভ বা লিভ করে। আগ্রাসী লাইন-লেংথে এজ বা LBW-এর সুযোগ আছে।','কাটার/সিম মুভমেন্ট ব্যবহার করুন। মাঝেমধ্যে শর্ট লেংথ দিয়ে তার ট্রিগার মুভমেন্ট যাচাই করুন।','স্কোরিং রেট বাড়ালে (অফের বাইরে ব্লক, ওয়াইড লাইন, লোভনীয় ড্রাইভ) সে সংযত হয়ে যায়, তাই ঝুঁকি নিতে বাধ্য করলে ভুল হতে পারে।']);
+L('#s2',['অফ-স্টাম্প লাইনে টাইট বল, কোনো ওয়াইডথ নয়। বোল্ড বা LBW লক্ষ্য করুন, সম্ভব হলে স্লিপ রাখুন।','গুড লেংথে বল করলে বড় শট কঠিন হয়।','ফ্লাইটেড বলের সঙ্গে দ্রুত, ফ্ল্যাটার ও স্লাইডার মেশান।','অ্যারাউন্ড দ্য উইকেট বল করলে তার জায়গা কমে যায়।','স্টক বল স্টাম্প বা প্যাডে টার্ন করান।','আর্ম বল দিয়ে ব্যাকফুটে বিট করুন বা LBW করুন।']);
+L('#s3',['অফ স্পিন বা স্লো লেফট-আর্ম আনুন, বিশেষ করে ড্রিফটসহ শুরুর গ্রিপ ও টার্ন কাজে লাগাতে।','অফ-স্টাম্পে বা তার বাইরে বল করুন।','তাকে ক্রিজের ওপর দিয়ে শরীর থেকে দূরে টেনে আনুন।','শরীরের দিকে টাইট অ্যাঙ্গেল তৈরি করুন, সুইপ করতে গেলে LBW ফাঁদ।','ঠিক জায়গায় বল করুন, যাতে সে হাত খোলার জায়গা না পায়।','সে চার্জ করলে বা রিভার্স করলে পেস ভ্যারিয়েশন ব্যবহার করুন।']);
+$('#bg').innerHTML=[['SR',NCL.sr,2],['Average',NCL.a,2],['Runs',NCL.r,0],['Highest',NCL.hs,0],['Fours',NCL.f,0],['Sixes',NCL.s,0],['50s / 100s',NCL.h50+' / '+NCL.h100]].map(x=>`<div><b ${typeof x[1]=='number'?`data-n="${x[1]}" data-d="${x[2]}"`:''}>${x[1]}</b><span>${x[0]}</span></div>`).join('');
+const cm=[['Strike rate',NCL.sr,ALL.sr,150],['Average',NCL.a,ALL.a,50],['Boundary runs %',bd(NCL),bd(ALL),100],['Balls per boundary (কম ভালো)',bpb(NCL),bpb(ALL),8]];
+$('#cmp').innerHTML=cm.map(x=>`<div class="cmp"><div class="t"><span>${x[0]}</span><span>${x[1].toFixed(1)} · ${x[2].toFixed(1)}</span></div><div class="br"><i class="l1" style="--w:${x[1]/x[3]*100}%"></i></div><div class="br"><i class="l2" style="--w:${x[2]/x[3]*100}%"></i></div></div>`).join('')+`<p class="note">সব T20: ${ALL.m} ম্যাচ, ${ALL.r} রান, গড় ${ALL.a}, SR ${ALL.sr}। NCL-এ তার স্ট্রাইক রেট ও বাউন্ডারি-নির্ভরতা দুটোই স্পষ্টভাবে বেশি।</p>`;
+const Z=[['Full toss',4.2],['Yorker',0],['Half volley',0],['Full',4.2],['Length',29.2],['Short',62.5]];
+$('#pitch').innerHTML=Z.map(z=>`<div class="zr"><span>${z[0]}</span><div class="br"><i style="--w:${z[1]}%"></i></div><b>${z[1]}%</b></div>`).join('');
+const V=[['v1','চার','RAM','CHD বনাম RPD','০৩ অক্টোবর ২০২৫'],['v2','চার','RAS','CHD বনাম RPD','১০ অক্টোবর ২০২৫'],['v3','ছক্কা','LAS','DHM বনাম CHD','২৭ সেপ্টেম্বর ২০২৫'],['v4','আউট','LAS','CHD বনাম DHD','০৭ অক্টোবর ২০২৫'],['v5','PM','LAM','DHM বনাম CHD','২৭ সেপ্টেম্বর ২০২৫']];
+$('#vg').innerHTML=V.map(v=>`<div class="card vc"><video controls preload="metadata" playsinline src="videos/${v[0]}.mp4#t=0.1"></video><h3>${v[3]}</h3><div class="ch"><span class="${v[1]=='আউট'?'w':'o'}">${v[1]}</span><span>${v[2]}</span><span>${v[4]}</span></div></div>`).join('');
+$('#tabs').innerHTML=T.map(t=>`<button class="tab" role="tab" data-t="${t[0]}">${t[1]}</button>`).join('');
+function count(r){r.querySelectorAll('[data-n]').forEach(e=>{const t=+e.dataset.n,d=+(e.dataset.d||0);if(RM){e.textContent=t.toFixed(d);return}const t0=performance.now(),f=n=>{const p=Math.min(1,(n-t0)/1100);e.textContent=(t*(1-Math.pow(1-p,3))).toFixed(d);if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)})}
+function show(id){document.querySelectorAll('section').forEach(s=>s.classList.remove('on'));document.querySelectorAll('.tab').forEach(b=>{const on=b.dataset.t==id;b.classList.toggle('on',on);b.setAttribute('aria-selected',on)});
+ document.querySelectorAll('video').forEach(v=>v.pause());const s=$('#'+id);requestAnimationFrame(()=>{s.classList.add('on');count(s)});history.replaceState(null,'','#'+id)}
+document.addEventListener('click',e=>{const b=e.target.closest('.tab');if(b)show(b.dataset.t)});
+document.addEventListener('pointermove',e=>{if(RM||e.pointerType=='touch')return;const c=e.target.closest('.tilt');document.querySelectorAll('.tilt').forEach(x=>{if(x!==c)x.style.transform=''});if(!c)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(700px) rotateY(${x*12}deg) rotateX(${-y*12}deg) translateZ(8px)`});
+document.addEventListener('pointerleave',()=>document.querySelectorAll('.tilt').forEach(x=>x.style.transform=''),true);
+
+// Interactive field map: all 11 fielders, both batters and the bowler can be moved.
+const fieldSvg=$('#cricketField'),playersLayer=$('#fieldPlayers');
+const initialPlayers=[
+ {id:'f1',label:'F1',role:'Fielder',x:400,y:70,type:'fielder'},
+ {id:'f2',label:'F2',role:'Fielder',x:260,y:105,type:'fielder'},
+ {id:'f3',label:'F3',role:'Fielder',x:540,y:105,type:'fielder'},
+ {id:'f4',label:'F4',role:'Fielder',x:155,y:185,type:'fielder'},
+ {id:'f5',label:'F5',role:'Fielder',x:645,y:185,type:'fielder'},
+ {id:'f6',label:'F6',role:'Fielder',x:105,y:310,type:'fielder'},
+ {id:'f7',label:'F7',role:'Fielder',x:695,y:310,type:'fielder'},
+ {id:'f8',label:'F8',role:'Fielder',x:200,y:440,type:'fielder'},
+ {id:'f9',label:'F9',role:'Fielder',x:600,y:440,type:'fielder'},
+ {id:'f10',label:'F10',role:'Fielder',x:290,y:520,type:'fielder'},
+ {id:'f11',label:'F11',role:'Fielder',x:510,y:520,type:'fielder'},
+ {id:'striker',label:'STR',role:'Striker',x:400,y:407,type:'batter'},
+ {id:'nonstriker',label:'NS',role:'Non-striker',x:400,y:213,type:'batter'},
+ {id:'bowler',label:'BWL',role:'Bowler',x:400,y:174,type:'bowler'}
+];
+let fieldPlayers=initialPlayers.map(p=>({...p})),dragging=null;
+const NS='http://www.w3.org/2000/svg';
+function svgEl(tag,attrs={}){const el=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,v));return el}
+function renderField(){
+ playersLayer.replaceChildren();
+ fieldPlayers.forEach(p=>{
+  const g=svgEl('g',{class:`field-player ${p.type}`,transform:`translate(${p.x} ${p.y})`,'data-id':p.id,tabindex:'0',role:'button','aria-label':`${p.role} ${p.label}. Drag to move.`});
+  const hit=svgEl('circle',{r:p.type==='fielder'?21:24,class:'player-hit'});
+  const circle=svgEl('circle',{r:p.type==='fielder'?15:18,class:'player-marker'});
+  const label=svgEl('text',{x:0,y:4,class:'player-label','text-anchor':'middle'});label.textContent=p.label;
+  const name=svgEl('text',{x:0,y:p.type==='fielder'?30:34,class:'player-name','text-anchor':'middle'});name.textContent=p.role;
+  g.append(hit,circle,label,name);g.addEventListener('pointerdown',startDrag);g.addEventListener('keydown',e=>{if(!['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();const step=e.shiftKey?15:5;if(e.key==='ArrowUp')p.y-=step;if(e.key==='ArrowDown')p.y+=step;if(e.key==='ArrowLeft')p.x-=step;if(e.key==='ArrowRight')p.x+=step;clampPlayer(p);renderField();});playersLayer.append(g);
+ });
+ renderRoster();
+}
+function renderRoster(){const r=$('#fieldRoster');if(!r)return;r.innerHTML=fieldPlayers.map(p=>`<div class="roster-item"><span class="legend-dot ${p.type==='fielder'?'fielder-dot':p.type==='batter'?'batter-dot':'bowler-dot'}"></span><span>${p.label}</span><small>${p.role}</small><span class="roster-coords">${Math.round(p.x)}, ${Math.round(p.y)}</span></div>`).join('')}
+function pointFromEvent(e){const pt=fieldSvg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;return pt.matrixTransform(fieldSvg.getScreenCTM().inverse())}
+function startDrag(e){e.preventDefault();const id=e.currentTarget.dataset.id;const p=fieldPlayers.find(x=>x.id===id);if(!p)return;dragging={id,dx:p.x-pointFromEvent(e).x,dy:p.y-pointFromEvent(e).y};e.currentTarget.setPointerCapture?.(e.pointerId);e.currentTarget.classList.add('dragging')}
+fieldSvg.addEventListener('pointermove',e=>{if(!dragging)return;const p=fieldPlayers.find(x=>x.id===dragging.id);if(!p)return;const pt=pointFromEvent(e);p.x=pt.x+dragging.dx;p.y=pt.y+dragging.dy;clampPlayer(p);const g=playersLayer.querySelector(`[data-id="${p.id}"]`);if(g)g.setAttribute('transform',`translate(${p.x} ${p.y})`);renderRoster()});
+function stopDrag(){if(dragging){const g=playersLayer.querySelector(`[data-id="${dragging.id}"]`);if(g)g.classList.remove('dragging')}dragging=null}
+fieldSvg.addEventListener('pointerup',stopDrag);fieldSvg.addEventListener('pointercancel',stopDrag);window.addEventListener('pointerup',stopDrag);
+function clampPlayer(p){p.x=Math.max(45,Math.min(755,p.x));p.y=Math.max(40,Math.min(580,p.y))}
+$('#resetField').addEventListener('click',()=>{fieldPlayers=initialPlayers.map(p=>({...p}));renderField()});
+$('#saveField').addEventListener('click',()=>{try{localStorage.setItem('joyScoutingFieldLayout',JSON.stringify(fieldPlayers));$('#saveField').textContent='Saved ✓';setTimeout(()=>$('#saveField').textContent='Save layout',1400)}catch(e){alert('This browser does not allow saving the layout.')}});
+$('#loadField').addEventListener('click',()=>{try{const saved=localStorage.getItem('joyScoutingFieldLayout');if(!saved){alert('No saved field layout found yet.');return}const parsed=JSON.parse(saved);if(Array.isArray(parsed)&&parsed.length===initialPlayers.length){fieldPlayers=parsed;renderField()}else alert('Saved layout could not be loaded.')}catch(e){alert('Saved layout could not be loaded.')}});
+renderField();
+
+count(document.querySelector('.hero'));show(T.some(t=>'#'+t[0]==location.hash)?location.hash.slice(1):'ov');
+</script></body></html>
